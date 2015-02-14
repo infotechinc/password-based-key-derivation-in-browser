@@ -1,8 +1,8 @@
-Symmetric Encryption Sample
-===========================
+Password-based Key Derivation
+=============================
 
 This web page with associated JavaScript allows a user to
-enter a password, and derive a key for symmetric
+enter a password and derive a key for symmetric
 encryption from it.
 
 This example is provided to illustrate how to use the W3C
