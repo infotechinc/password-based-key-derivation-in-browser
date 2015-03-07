@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function deriveAKey() {
         var salt = "Pick anything you want. This isn't secret.";
         var iterations = 1000;
-        var hash = "SHA-256";
+        var hash = document.getElementById("hash-name").value;
 
         var password = document.getElementById("password").value;
 
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Display it in hex format
         then(function(keyBytes) {
                 var hexKey = arrayBufferToHexString(keyBytes);
-                document.getElementById("aes-key").innerText = hexKey;
+                document.getElementById("aes-key").textContent = hexKey;
         }).
         catch(function(err) {
             alert("Key derivation failed: " + err.message);

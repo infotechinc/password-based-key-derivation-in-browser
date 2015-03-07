@@ -10,8 +10,17 @@
     <h1>Password Based Key Derivation</h1>
 
     <section id="key-management">
-        <p>Password: <input type="text" size="32" id="password"/>
-           <button id="derive-key">Derive Key</button>
+        <p>
+            Password:
+            <input type="text" size="32" id="password"/>
+            Hash:
+            <select id="hash-name">
+                <option value="SHA-1">SHA-1</option>
+                <option value="SHA-256">SHA-256</option>
+                <option value="SHA-384">SHA-384</option>
+                <option value="SHA-512">SHA-512</option>
+            </select>
+            <button id="derive-key">Derive Key</button>
         </p>
         <p>
             Derived Key: <span id="aes-key">Missing</span>
